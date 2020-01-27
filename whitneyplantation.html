@@ -6,7 +6,12 @@
 
   <!-- favicon-->
   <link rel="icon" type="image/png" sizes="32x32" href="Assets/Logo.png"> 
-    
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"/> 
+  <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 </head>
 <body>
     <div class="container">
@@ -17,9 +22,9 @@
                 </li>
             </ul>
         </nav>
-        <section>
-            <h1>Photos from the Whitney Plantation, Edgard, Louisiana</h1>
-            <div>
+        <section id="whitneyplantation">
+            <h1 class="title">Photos from the Whitney Plantation, Edgard, Louisiana</h1>
+            <div class="col-8">
                 <p>
                     My afternoon tour of the Whitney Plantation was a powerful oportunity to learn more about a truely evil institution and
                     a foundational aspect of American History. Our tour guide's description of the psycology
@@ -29,31 +34,40 @@
                     them back through the cracks.
                     
                 </p>
-            </div><br>
-
-            <img src="Assets/whitney_kidsbw.png" width=45%>
-            <div>
-                A few of Woodrow Nash's <em>Children of Whitney</em>.
-            </div><br>
-
-            <img src="Assets/whitney_memorial.png" width=65%>
-            <div>
-                Allées Gwendolyn Midlo Hall
             </div>
-            <div>
-                "Dedicated to 107,000 people enslaved in Lousisiana documented in the Louisiana Slave Database built by Gwendolyn Midlo Hall"
-                (Whitney Plantation Website)
-            </div><br>
 
-            <img src="Assets/whitney_wall.png" width=45%>
             <div>
-                Freedom, Education, Family
-            </div><br>
+                <img class="picture-vertical" src="Assets/whitney_kidsbw.png">
+                <div class="picture-caption">
+                    A few of Woodrow Nash's <em>Children of Whitney</em>.
+                </div>
+            </div>
 
-            <img src="Assets/whitney_bighouse.png" width=65%>
             <div>
-                The Big House
-            </div><br>
+                <img class="picture-horizontal" src="Assets/whitney_memorial.png">
+                <div class="picture-caption">
+                    Allées Gwendolyn Midlo Hall
+                    <div class="light">
+                        "Dedicated to 107,000 people enslaved in Lousisiana documented in the Louisiana Slave Database built by Gwendolyn Midlo Hall"
+                        (Whitney Plantation Website)
+                    </div>
+                </div>
+                
+            </div>
+
+            <div>
+                <img class="picture-vertical" src="Assets/whitney_wall.png">
+                <div class="picture-caption">
+                    Freedom, Education, Family
+                </div>
+            </div>
+
+            <div>
+                <img class="picture-horizontal" src="Assets/whitney_bighouse.png">
+                <div class="picture-caption">
+                    The Big House
+                </div>
+            </div>
 
         </section>
         <footer>Copyright © Reuben Allik</footer>

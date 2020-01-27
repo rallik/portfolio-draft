@@ -1,17 +1,28 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
+
 .container{
     max-width:1024px;
     width:100%;
     margin: 0 auto;
-    padding:50px 50px 40px 50px; 
+    padding:50px 20px 20px 20px; 
     box-sizing: border-box;
 }
+
 a{
     text-decoration: none;
-    color:rgb(8, 102, 148);
+    border-radius: 2px;
+    margin: 5px 5px 5px 0px;
+    padding: 2px 4px 2px 4px;
+    color:#06567F;
 }
+a:hover{
+    text-decoration: none;
+    background-color: #E5F6FA;
+}
+
+
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -19,12 +30,180 @@ nav ul{
     display: flex;
     justify-content: center;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width:100%;
     background-color: white;    
 }
+
 li a {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+}
+
+section .title{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 0;
+} 
+
+.center{
+    justify-content: center;
+}    
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profilepic{
+    border-radius: 20px;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+
+table {
+    padding: 1rem;
+    display: flex;
+    width:100%;
+    align-content: center;
+    justify-content: center;
+}
+
+td{
+    padding: 1rem 1rem 1rem 1rem;
+    font-style: italic;
+    color: maroon;
+}
+
+#news ul {
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 10px;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+#currentlyreading .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.bookcover{
+    border-radius: 20px;
+    width: 25%;
+    object-fit: cover;
+    margin: 5px 37.5% 5px;
+}
+
+.booktitle{
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.booklink{
+    color:#06567F;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#projects .row{
+    margin-bottom: 4rem;
+}
+
+.project-title{
+    font-weight: bold;
+}
+
+.project-image-horizontal{
+    width: 100%
+}
+
+.project-image-vertical {
+    width: 70%
+}
+
+.tag{
+    display: inline-block;
+    border-radius: 2px;
+    margin: 5px 5px 5px 0px;
+    padding: 2px 4px 2px 4px;
+    background: #eeeeee;
+}
+
+.title-shift {
+    margin: 0px 0px 0px 4px;
+}
+
+.designthinking {
+    background-color: #2A3CE5;
+    color: white;
+}
+
+.photography {
+    background-color: #B30003;
+    color: white;
+}
+    
+.travel {
+    background-color: #14611A;
+    color: white;
+}
+
+#printersproject .col-8{
+    padding: 0 5rem 2rem;
+}
+
+.printers-final-image {
+    margin-left: 25%;
+    width: 50%
+
+}
+
+#photofinal .col-8{
+    padding: 0 5rem 2rem;
+}
+
+.picture-vertical {
+    margin-left: 17%;
+    width: 66%
+}
+
+.picture-horizontal {
+    width: 100%
+}
+
+.picture-caption {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem 0 4rem 0rem;    
+}
+
+.light{
+    font-weight: normal;
+}
+
+#whitneyplantation .col-8 {
+    padding: 0 5rem 2rem;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .col-1 {flex-basis: 8.33%;}
+    .col-2 {flex-basis: 16.66%;}
+    .col-3 {flex-basis: 25%;}
+    .col-4 {flex-basis: 33.33%;}
+    .col-5 {flex-basis: 41.66%;}
+    .col-6 {flex-basis: 50%;}
+    .col-7 {flex-basis: 58.33%;}
+    .col-8 {flex-basis: 66.66%;}
+    .col-9 {flex-basis: 75%;}
+    .col-10 {flex-basis: 83.33%;}
+    .col-11 {flex-basis: 91.66%;}
+    .col-12 {flex-basis: 100%;}
 }
